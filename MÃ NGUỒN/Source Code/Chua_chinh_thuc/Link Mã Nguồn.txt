@@ -1,0 +1,2 @@
+link github: https://github.com/baybesharktudu/f16s
+link web (server free => đợi 30s - 60s): https://f16s.onrender.com/

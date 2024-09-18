@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --bg-color: #323437;
+    --main-color: #e2b714;
+    --caret-color: #e2b714;
+    --sub-color: #646669;
+    --sub-alt-color: #2c2e31;
+    --text-color: #d1d0c5;
+    --error-color: #ca4754;
+    --error-extra-color: #7e2a33;
+    --colorful-error-color: #ca4754;
+    --colorful-error-extra-color: #7e2a33;
+}
+
+body {
+    font-family: 'Vazirmatn', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.scroll-post::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.scroll-post::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 100rem;
+}
+
+.scroll-post::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    background-color: var(--bg-color);
+}
+
+.scroll-post:hover {
+    cursor: pointer;
+}
+
+.Toastify__toast {
+    font-family: 'Vazirmatn', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--text-color); /* Màu chữ của toast */
+}
+
+/* Thay đổi màu chữ của toast khi ở trạng thái success */
+.Toastify__toast--success {
+    background-color: var(--sub-alt-color); /* Màu nền của toast khi thành công */
+    color: #25d366;
+}
+
+/* Thay đổi màu chữ của toast khi ở trạng thái error */
+.Toastify__toast--error {
+    background-color: var(--sub-alt-color); /* Màu nền của toast khi lỗi */
+    color: #e94949;
+    display: flex;
+}
+
+.Toastify__close-button {
+    color: var(--sub-alt-color); /* Màu của icon đóng */
+}
+
+.Toastify__toast-body {
+    display: flex;
+    align-items: flex-end;
+}
